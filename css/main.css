@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    overflow-x: hidden;
+
+    >.cornometer {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #e6e6e6;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 50px;
+        transition: .4s;
+        
+        >.saves {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100%;
+            >span{
+                padding: 0 10px 0 0;
+            }
+        }
+
+        >.times {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+            width: 100%;
+            padding: 0 10%;
+
+            >div {
+
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                justify-items: center;
+                flex-wrap: wrap;
+                width: 100%;
+                box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.628);
+                border-radius: 10px;
+                transition: .4s;
+
+                &:hover {
+                    box-shadow: inset -5px -5px 40px rgba(128, 128, 128, 0.628);
+                }
+
+                >.r {
+                    color: #16acf2;
+                }
+
+                >span {
+                    font-size: 18px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+
+
+                    padding: 30px 0;
+                    align-content: center;
+
+                }
+
+            }
+        }
+
+        >.functions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 0 10%;
+            gap: 5%;
+
+            >span {
+                justify-content: center;
+                display: flex;
+                width: fit-content;
+                font-size: 17px;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                cursor: pointer;
+                color: #16acf2;
+                transition: .4s;
+                border-radius: 10px;
+                padding: 10px;
+
+                &:hover {
+                    box-shadow: inset -5px -5px 40px rgba(128, 128, 128, 0.628);
+                }
+            }
+        }
+
+        >.npage {
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+
+            >span {
+                justify-content: center;
+                display: flex;
+                width: fit-content;
+                justify-content: center;
+                font-size: 17px;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                cursor: pointer;
+                color: #16acf2;
+                transition: .4s;
+                border-radius: 10px;
+                padding: 10px;
+
+                &:hover {
+                    box-shadow: inset -5px -5px 40px rgba(128, 128, 128, 0.628);
+                }
+            }
+        }
+
+    }
+
+    >.localTime {
+        width: 100%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        position: absolute;
+        top: 0;
+        left: 100%;
+        transition: .4s;
+        z-index: 999;
+        background-color: #e6e6e6;
+        flex-wrap: wrap;
+        >h1{
+            color: #16acf2;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        >div{
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            >span {
+                justify-content: center;
+                display: flex;
+                width: fit-content;
+                justify-content: center;
+                font-size: 17px;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                cursor: pointer;
+                color: #16acf2;
+                transition: .4s;
+                border-radius: 10px;
+                padding: 10px;
+                width: fit-content;
+                
+    
+                &:hover {
+                    box-shadow: inset -5px -5px 40px rgba(128, 128, 128, 0.628);
+                }
+            }
+        }
+        
+    }
+    >footer{
+        width: 100%;
+        height: 20%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        background-color: #e6e6e6;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 1px solid #16acf2;
+        >h1{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        >nav{
+            width: 50%;
+            height: 100%;
+            >ul{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                >li{
+                    list-style-type: none;
+                    >a{
+                        text-decoration: none;
+                        color: black;
+                        padding: 5px;
+                        transition: .4s;
+                        border-radius: 50%;
+                        &:hover{
+                            background-color: #16acf2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
